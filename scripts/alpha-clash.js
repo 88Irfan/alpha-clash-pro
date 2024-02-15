@@ -11,7 +11,13 @@
 // }
 function handleKeyboardKeyUpEvent(event){
     const playerPressed=event.key;
-    console.log(playerPressed);
+    // console.log("player enter",playerPressed);
+    if(playerPressed==='Enter'){
+        play();
+    }
+    if(playerPressed === 'Escape'){
+        gameOver();
+    }
 
     // get the expected to press
     const currentAlphabetElement=document.getElementById('current-alphabets');
