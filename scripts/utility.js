@@ -2,7 +2,7 @@ function hideElementById(elementId){
     const element=document.getElementById(elementId);
     element.classList.add('hidden'); 
 }
-function showElementBYid(elementId){
+function showElementById(elementId){
     const element=document.getElementById(elementId);
     element.classList.remove('hidden'); 
 
@@ -12,6 +12,28 @@ function setBackgroudColorById(elementId){
     element.classList.add('bg-orange-400');
 
 }
+function removeBackgroundColorById(elementId){
+    const element=document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
+
+function getTextElementValueById(elementId){
+    const element=document.getElementById(elementId);
+    const elementText=element.innerText;
+    const value=parseInt(elementText);
+    return value;
+}
+
+function getElementTextById(elementId){
+    const element=document.getElementById(elementId);
+    const text=element.innerText;
+    return text;
+}
+function setTextElementValueById(elementId,value){
+    const element=document.getElementById(elementId);
+    element.innerText=value;
+}
+
 function getARandomAlphabets(){
     // get or create an alphabets array
     const alphabetsString='abcdefghijklmnopqrstuvwxyz';
